@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite thread-count="3" verbose="1" name="Automation_Framework_Saucedemo"
+       annotations="JDK" parallel="tests">
+
+    <test name="Add products Test">
+        <classes>
+            <class name="qa.automation.AddProductsInCartTest"/>
+        </classes>
+    </test>
+    <test name="Unsuccessful login Test">
+        <classes>
+            <class name="qa.automation.UnsuccessfulLoginTest"/>
+        </classes>
+    </test>
+    <test name="Successful login Test">
+        <classes>
+            <class name="qa.automation.SuccessfulLoginTest"/>
+        </classes>
+    </test>
+</suite>
